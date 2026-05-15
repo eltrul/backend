@@ -1,0 +1,100 @@
+<div
+   style="
+      font-family:
+         -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;
+      max-width: 480px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+      overflow: hidden;
+   "
+>
+   <!-- Body -->
+   <div style="padding: 32px 32px 24px">
+      <p
+         style="
+            margin: 0 0 4px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #0f0f0f;
+         "
+      >
+         Xin chào, {username} 👋
+      </p>
+      <p
+         style="
+            margin: 0 0 28px;
+            font-size: 14px;
+            color: #6b7280;
+            line-height: 1.6;
+         "
+      >
+         Đây là mã xác thực của bạn. Đừng chia sẻ mã này cho bất kỳ ai.
+      </p>
+
+      <!-- OTP Box -->
+      <div
+         style="
+            background: #f9fafb;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 28px;
+         "
+      >
+         <p
+            style="
+               margin: 0 0 6px;
+               font-size: 11px;
+               font-weight: 500;
+               letter-spacing: 0.08em;
+               text-transform: uppercase;
+               color: #9ca3af;
+            "
+         >
+            Mã xác thực
+         </p>
+         <p
+            style="
+               margin: 0;
+               font-size: 36px;
+               font-weight: 500;
+               letter-spacing: 0.2em;
+               font-family: &quot;Courier New&quot;, monospace;
+               color: #0f0f0f;
+            "
+         >
+            {verificationCode}
+         </p>
+      </div>
+
+      <!-- Warning -->
+      <div
+         style="
+            background: #fffbeb;
+            border-radius: 8px;
+            border: 1px solid #fcd34d;
+            padding: 12px 16px;
+            margin-bottom: 28px;
+         "
+      >
+         <p
+            style="margin: 0; font-size: 13px; color: #92400e; line-height: 1.5"
+         >
+            ⚠ Mã này sẽ hết hạn sau <strong>10 phút</strong>. Nếu bạn không yêu
+            cầu mã này, hãy bỏ qua email này.
+         </p>
+      </div>
+
+      <div style="border-top: 1px solid #e5e7eb; padding-top: 20px">
+         <p
+            style="margin: 0; font-size: 12px; color: #9ca3af; line-height: 1.6"
+         >
+            Bạn nhận được email này vì một yêu cầu xác thực đã được thực hiện
+            trên tài khoản của bạn.
+         </p>
+      </div>
+   </div>
+</div>

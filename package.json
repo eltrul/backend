@@ -1,0 +1,39 @@
+{
+   "name": "starfield",
+   "module": "index.ts",
+   "type": "module",
+   "private": true,
+   "devDependencies": {
+      "@types/bun": "latest",
+      "@types/geoip-lite": "^1.4.4",
+      "@types/jsonwebtoken": "^9.0.10"
+   },
+   "scripts": {
+      "authentication": "bun --watch run src/authentication/authentication.ts",
+      "users": "bun --watch run src/users/http.ts",
+      "apiGateway": "bun --watch run src/httpGateway/httpGateway.ts",
+      "configuration": "bun --watch run src/configuration/configuration.ts",
+      "what": "bun --watch run src/what/depzai.ts", 
+      "pushNotification": "bun --watch run src/pushNotification/initalizer" 
+   },
+   "peerDependencies": {
+      "typescript": "^5"
+   },
+   "dependencies": {
+      "@elysiajs/cors": "^1.4.1",
+      "axios": "^1.13.6",
+      "crypto-random-string": "^5.0.0",
+      "elysia": "^1.4.27",
+      "firebase-admin": "^13.9.0",
+      "geoip-lite": "^2.0.0",
+      "ioredis": "^5.10.1",
+      "jsonwebtoken": "^9.0.3",
+      "local-reverse-geocoder": "^0.16.7",
+      "maxmind": "^5.0.5",
+      "moment": "^2.30.1",
+      "mongoose": "^9.3.1",
+      "nodemailer": "^8.0.5",
+      "pm2": "^7.0.1",
+      "uuid": "^13.0.0"
+   }
+}
