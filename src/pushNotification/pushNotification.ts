@@ -87,6 +87,7 @@ export class PushNotification implements ModelSkeleton {
          return new Controller(instance, this)
       }
    }
+   
    async broadcastMessage(ownerId: string, title: string, body: string) {
       const devices = await this.model.find({ ownerId, state: "active" }).lean();
       const tokens = devices.map(d => d.secret).filter(Boolean);
